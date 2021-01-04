@@ -18,7 +18,6 @@ jobs:
       - name: login into github package registry
         run: echo ${{ secrets.CR_PAT }} | docker login ghcr.io -u $GITHUB_ACTOR --password-stdin
       - name: build latest docker image
-        if: ${{ steps.release.outputs.release_created }}
         run: |
           docker build \
           -t "ghcr.io/${GITHUB_REPOSITORY}:${TAG_NAME}" \
@@ -26,5 +25,4 @@ jobs:
         env:
           TAG_NAME: ${{ steps.release.outputs.tag_name }}
       - name: publish latest image
-        if: ${{ steps.release.outputs.release_created }}
         run: docker push "ghcr.io/${GITHUB_REPOSITORY}"
