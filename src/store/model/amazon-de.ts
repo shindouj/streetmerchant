@@ -342,22 +342,6 @@ export const AmazonDe: Store = {
 		{
 			brand: 'asus',
 			cartUrl:
-				'https://www.amazon.de/gp/aws/cart/add.html?ASIN.1=B08HSJ1622&Quantity.1=1',
-			model: 'dual',
-			series: '3070',
-			url: 'https://www.amazon.de/dp/B08HSJ1622'
-		},
-		{
-			brand: 'asus',
-			cartUrl:
-				'https://www.amazon.de/gp/aws/cart/add.html?ASIN.1=B08KHFZN9P&Quantity.1=1',
-			model: 'dual oc',
-			series: '3070',
-			url: 'https://www.amazon.de/dp/B08KHFZN9P'
-		},
-		{
-			brand: 'asus',
-			cartUrl:
 				'https://www.amazon.de/gp/aws/cart/add.html?ASIN.1=B08HT7PR9Y&Quantity.1=1',
 			model: 'strix',
 			series: '3070',
